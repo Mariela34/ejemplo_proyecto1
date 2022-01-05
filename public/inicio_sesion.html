@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+    <title>Inicio Sesion | Hoteles Costa Rica</title>
+    <meta charset="utf/8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/iniciar_sesion/inicio_sesion.css">
+    
+</head>
+
+<body class= "fondo_inicio_sesion">
+    <header class="header_principal">
+            <h1>Hoteles Costa Rica</h1>
+
+        <nav>
+            <a href="inicio_sesion.html">Iniciar Sesión</a>
+            <a href="registro_usuarios.html">Registrarse</a>
+        </nav>
+    </header>
+
+
+    <section class="titulo_inicio_sesion">
+            
+
+            <form class="form_inicio_sesion">
+                    <h1>Iniciar Sesión</h1>
+
+
+                <div>
+                    <input type="email" id="correo_inicio_sesion" placeholder="Correo electrónico">
+                </div>
+        
+                <div>
+                    <input type="password" id="contrasenna_inicio_sesion" placeholder="Contraseña">
+                </div>
+                <div>
+                    <button type="button" id="botonIniciarSesion">Iniciar sesión</button>
+                </div>
+                <p>¿Aún no tiene una cuenta?</p><p>Crea una cuenta aquí.</p>
+                <div>
+                    <button type="button" onclick="location.href='registro_usuarios.html'" id="irRegistrar">Crear cuenta</button>
+                </div>
+            </form>
+    </section>
+    <footer>
+        <p>Derechos reservados por Copyright © 2019</p>
+    </footer>
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/inicio sesión/servicio_inicio_sesion.js"></script>
+    <script src="js/inicio sesión/inicio_sesion.js"></script>
+</body>
+
+
+</html>

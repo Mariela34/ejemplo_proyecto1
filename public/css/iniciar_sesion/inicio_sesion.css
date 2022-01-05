@@ -1,0 +1,71 @@
+
+header{
+    background-color: #f39c12;
+    height: 60px;
+    
+}
+
+header nav{
+    float: right;
+}
+
+.fondo_inicio_sesion{
+    background-image: url('http://www.fotos.org/galeria/data/905/Paisaje-exotico-hotel-fondos-de-pantalla.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.form_inicio_sesion{
+    margin: 53px 452px;
+    background-color: rgba(255, 255, 255, 0.829);
+    padding: 2px 40px 20px;
+}
+   
+.form_inicio_sesion p {
+    margin-left:12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.titulo_inicio_sesion h1{
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.form_inicio_sesion div{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+
+.form_inicio_sesion input{
+    display: inline-block;
+    height: 25px;
+    margin-left: 40px;
+    width: 300px;
+}
+
+.form_inicio_sesion button{
+    display: block;
+    width: 200px;
+    background-color: #f1c40f;
+    color: black;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-left: 95px;
+    border-radius:20px; 
+}
+
+#irRegistrar {
+    margin-top: 20px;
+}
+
+.form_inicio_sesion button:hover{
+    cursor: pointer;
+    background-color:#fcdb56; 
+}

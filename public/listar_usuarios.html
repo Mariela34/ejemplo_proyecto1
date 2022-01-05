@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+    <title>Usuarios | Hoteles Costa Rica</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?
+    family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/general.css">
+   
+    <link rel="stylesheet" href="css/usuarios/lista_usuarios.css">
+</head>
+
+<body>
+        <header class="header_sesion_iniciada">
+                <h1>Hoteles Costa Rica</h1>
+                <nav>
+                    <a href="listar_usuarios.html" id="nav_usuarios">Usuarios</a>
+                    <a href="" id="nav_hoteles">Hoteles</a>
+                    <a href="" id="btnCerrarSesion">Cerrar sesión</a>
+                </nav>
+                
+            </header>
+    <body>
+        <section id="descripcion">
+            <h1 class="tituloCliente">Usuarios</h1>
+           
+            <div>
+                <label for="textFiltro" class="textFiltroCliente">Filtrar</label>
+                <input type="text" id="textFiltroCliente">
+            </div>
+        </section> 
+        <section>
+            <table class="tb_clientes">
+                <thead>
+                    <th>Foto</th>
+
+                    <th>Nombre completo</th>
+                    <th>Cédula</th>
+                    <th>Correo Electrónico</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Edad</th>
+                </thead>
+                <tbody>
+                 
+                </tbody>
+            </table>
+        </section>
+        
+        <footer>
+            <p>Derechos reservados por Copyright © 2019</p>
+        </footer>
+        <script src="js/inicio sesión/controlador_permisos.js"></script>
+        <script src="js/inicio sesión/controlador_cerrar_sesion.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/usuarios/servicio_usuarios.js"></script>
+        <script src="js/usuarios/controlador_lista_usuarios.js"></script>
+    </body>
+
+</html>

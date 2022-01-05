@@ -1,0 +1,140 @@
+body{
+    background-image: url('https://ihg.scene7.com/is/image/ihg/intercontinental-san-jose-4060538507-2x1?fit=fit,1&wid=2400&hei=1200');
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#reg_hotel{
+    background: rgba(255, 255, 255, 0.747);
+    margin: 60px 210px;
+    padding: 10px 20px;
+    color:#000;
+}
+
+.form_hotel div input, .form_hotel div select{
+    margin-bottom: 70px;
+}
+
+.nombreHotel {
+    margin-left: 170px;
+}
+
+
+
+#reg_hotel h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+
+.form_hotel  div label{
+    font-size: 18px;
+    margin-left: 60px;
+    margin-bottom: 25px;
+    vertical-align: top;
+    display: inline-block;
+    width: 150px;
+}
+
+.form_hotel  div input{
+    width: 210px;
+    height: 25px;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 2px;
+}
+
+
+
+.form_hotel  div select{
+    width: 220px;
+    height: 32px;
+    display: inline-block;
+    padding: 2px;
+}
+
+.form_hotel  textarea{
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    min-width: 205px;
+    max-width: 205px;
+    min-height: 30px;
+    max-height: 30px;
+}
+.map-icon {
+    margin: 10px 0 0 12px;
+    fill: #737373;
+    transition-property: fill;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+  }
+  .map-icon:hover {
+    fill: #28b7e8;
+    animation-name: shake;
+    animation-duration: 0.16s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    transform-origin: 50%;
+
+  }
+  @-webkit-keyframes shake {
+    0% {
+      -webkit-transform: translateY(-14px);
+    }
+    15% {
+      -webkit-transform: translateY(0px);
+    }
+    30% {
+      -webkit-transform: rotate(-20deg);
+    }
+    50% {
+      -webkit-transform: rotate(70deg);
+    }
+    80% {
+      -webkit-transform: rotate(-10deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+    }
+  }
+  
+
+
+#btn_Registrar{
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 200px; 
+    margin: 60px 340px 50px;
+    background: #f8ce0b;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#btn_Registrar:hover{
+    background-color: #fad843;
+}
+
+
+
+#map {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+    box-shadow: unset 0 0 5px 5px;
+}
+
+.contenedor_mapa {
+    margin-top: 0px;
+    float: right;
+    width: 400px;
+}
+
+.contenedor_mapa h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    width: 380px;
+    text-align: left;
+}

@@ -1,0 +1,95 @@
+'user strict';
+const inputFiltrarHotel = document.querySelector('#textFiltroHotel');
+const mostrar_mapa = document.querySelector('.abrir_mapa');
+let cuerpo_tabla_hoteles = document.querySelector('#tb_hoteles tbody');
+
+let listaHoteles = obtenerHoteles(); 
+
+mostrarlistaHoteles();
+inputFiltrarHotel.addEventListener('keyup', mostrarlistaHoteles);
+
+
+function mostrarlistaHoteles() {
+
+    let filtro_hotel =  inputFiltrarHotel.value;
+
+    cuerpo_tabla_hoteles.innerHTML= '';
+
+    for(let i = 0; i < listaHoteles.length; i++) {
+        if(listaHoteles[i]['nombre_hotel'].toLowerCase().includes(filtro_hotel.toLowerCase())){
+
+            if( listaHoteles[i]['estado'] != 'Desactivado'){
+                let fila = cuerpo_tabla_hoteles.insertRow();            
+                                
+            
+            
+                let celda_nombre_hotel = fila.insertCell();                    
+                let celda_ubicacion = fila.insertCell();
+                let celda_provincia = fila.insertCell();
+                let celda_canton = fila.insertCell();
+                let celda_distrito = fila.insertCell();
+                let celda_direccion = fila.insertCell();
+                let celda_rating = fila.insertCell();
+    
+                
+    
+    
+                celda_nombre_hotel.innerHTML =  listaHoteles[i]['nombre_hotel']; 
+                celda_ubicacion.innerHTML = '';
+                celda_provincia.innerHTML =  listaHoteles[i]['provincia'];        
+                celda_canton.innerHTML = listaHoteles[i]['canton'];
+                celda_distrito.innerHTML =  listaHoteles[i]['distrito'];        
+                celda_direccion.innerHTML =  listaHoteles[i]['direccion'];  
+                celda_rating.innerHTML = '';      
+                
+                
+                let ver_ubicacion = document.createElement('button');
+                ver_ubicacion.textContent = 'Ver ubicación';
+    
+                ver_ubicacion.setAttribute('title', "Ver ubicación en el mapa");
+    
+                
+                let longitud = listaHoteles[i]['longitud_mapa'];
+                let latitud = listaHoteles[i]['latitud_mapa'];
+    
+    
+                ver_ubicacion.onclick = function(){
+                    let nombreHotel = listaHoteles[i]['nombre_hotel'];
+                    sessionStorage.setItem('nombre_hotel', nombreHotel);
+                    sessionStorage.setItem('latitudTemp', latitud);
+                    sessionStorage.setItem('longitudTemp', longitud);
+                    
+                    document.location.href = 'http://localhost:3000/public/mapa_hotel.html';
+                }
+    
+                celda_ubicacion.appendChild(ver_ubicacion);
+
+                let estrellas_sin_calificar = document.createElement('div');
+                estrellas_sin_calificar.classList.add('estrellas_sin_calificar');
+
+                let estrellas_calificadas = document.createElement('div');
+                estrellas_calificadas.classList.add('estrellas_calificadas');
+
+                let realizarCalificacion = document.createElement('p');
+                realizarCalificacion.textContent = 'Realizar calificación';
+                realizarCalificacion.dataset.id_hotel = listaHoteles[i]['_id'];
+                realizarCalificacion.style.color = 'red';
+
+                realizarCalificacion.addEventListener('click', realizarCalificacion);
+
+                estrellas_sin_calificar.appendChild(estrellas_calificadas);
+                
+                
+                celda_rating.appendChild(estrellas_sin_calificar);
+                celda_rating.appendChild(realizarCalificacion);
+            }
+        }
+    }
+};
+
+
+function realizarCalificacion() {
+    let id_hotel =  this.dataset.id_hotel;
+    localStorage.setItem('hotel', id_hotel);
+    window.location.href = 'card_hotel.html';
+};

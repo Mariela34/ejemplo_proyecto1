@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+<title>Hotel | Hoteles Costa Rica</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/general.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hoteles/calificar_hoteles.css">
+
+</head>
+
+<body>
+    <header class="header_sesion_iniciada">
+        <h1>Hoteles Costa Rica</h1>
+        <nav>
+            <a href="listar_usuarios.html" id="nav_usuarios">Usuarios</a>
+            <a href="" id="nav_hoteles">Hoteles</a>
+            <a href="" id="btnCerrarSesion">Cerrar sesión</a>
+        </nav>
+            
+    </header>
+
+    <section id="volver_hoteles">
+    
+        <button onclick="location.href='listar_hoteles_cliente.html'" class="btnVolver" id="btnVolver"> Volver a los hoteles</button>
+        
+    </section>
+    
+              
+
+
+    <section class="titulo_calificar">
+                <div class="contenedor_hotel">
+  
+                <div class="card_hotel">
+                  <!-- media container -->
+                  <div class="contenido">
+                    <div class="lado_izquierdo">
+                     <h2 class="nombre_hotel"></h2>
+                    <h3 class="direccion_hotel">Dirección</h3>
+                    <table class="tabla">
+                        <thead>
+                          <tr >
+                            <th>Ranking hotel</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="hotel">
+                          <td>
+                              <div class="estrellas_sin_calificar">
+                                <div class="estrellas_calificadas"></div>
+                              </div>
+                          </td>
+                          </tr>                        
+                        </tbody>
+                      </table>
+                    </div>
+                    <ul class="ubicacion">
+                        <button type="button" id="ver_ubicacion">Ver ubicacion</button>
+                    </ul>
+                  </div>
+                  <!-- body container -->
+                  <div class="lado_derecho">
+                    <div class="campo_ubicacion">
+                        <span id="espacio_de_ubicacion"></span>
+                      
+                    </div>
+                    <span class="titulo_evaluaciones">Evaluar hotel</span>
+                    <p>Se le está brindando la opción de que pueda evaluar 5 aspectos de este hotel y califique qué le pareció este lugar.</p>
+                    <div class="evaluaciones">
+                        <div>
+                            <div>
+                                <form>
+                                    <p>Comida</p>
+                                    <p class="comida" id="calificacion_comida">
+                                        <input name="estrellas" id="radio_comida1" type="radio" value="5">
+                                        <label for="radio_comida1">★</label>
+                                        <input name="estrellas" id="radio_comida2" type="radio" value="4">
+                                        <label for="radio_comida2">★</label>
+                                        <input name="estrellas" id="radio_comida3" type="radio" value="3">
+                                        <label for="radio_comida3">★</label>
+                                        <input name="estrellas" id="radio_comida4" type="radio" value="2">
+                                        <label for="radio_comida4">★</label>
+                                        <input name="estrellas" id="radio_comida5" type="radio" value="1">
+                                        <label for="radio_comida5">★</label>
+                                    </p>
+                                </form>
+                                <form>
+                                    <p>Calidad de servicio / Atención al cliente</p>
+                                    <p class="calidad_servicio" id="calificacion_calidad_servicio">
+                                        <input name="estrellas" id="radio_calidad_servicio1" type="radio" value="5">
+                                        <label for="radio_calidad_servicio1">★</label>
+                                        <input name="estrellas" id="radio_calidad_servicio2" type="radio" value="4">
+                                        <label for="radio_calidad_servicio2">★</label>
+                                        <input name="estrellas" id="radio_calidad_servicio3" type="radio" value="3">
+                                        <label for="radio_calidad_servicio3">★</label>
+                                        <input name="estrellas" id="radio_calidad_servicio4" type="radio" value="2">
+                                        <label for="radio_calidad_servicio4">★</label>
+                                        <input name="estrellas" id="radio_calidad_servicio5" type="radio" value="1">
+                                        <label for="radio_calidad_servicio5">★</label>
+                                    </p>
+                                </form>
+                                <form>
+                                    <p>Infraestuctura</p>
+                                    <p class="infraestructura" id="calificacion_infraestructura">
+                                        <input name="estrellas" id="radio_infraestructura1" type="radio" value="5">
+                                        <label for="radio_infraestructura1">★</label>
+                                        <input name="estrellas" id="radio_infraestructura2" type="radio" value="4">
+                                        <label for="radio_infraestructura2">★</label>
+                                        <input name="estrellas" id="radio_infraestructura3" type="radio" value="3">
+                                        <label for="radio_infraestructura3">★</label>
+                                        <input name="estrellas" id="radio_infraestructura4" type="radio" value="2">
+                                        <label for="radio_infraestructura4">★</label>
+                                        <input name="estrellas" id="radio_infraestructura5" type="radio" value="1">
+                                        <label for="radio_infraestructura5">★</label>
+                                    </p>
+                                </form>
+                                <form>
+                                    <p>Habitaciones</p>
+                                    <p class="habitaciones" id="calificacion_habitaciones">
+                                        <input name="estrellas" id="radio_habitaciones1" type="radio" value="5">
+                                        <label for="radio_habitaciones1">★</label>
+                                        <input name="estrellas" id="radio_habitaciones2" type="radio" value="4">
+                                        <label for="radio_habitaciones2">★</label>
+                                        <input name="estrellas" id="radio_habitaciones3" type="radio" value="3">
+                                        <label for="radio_habitaciones3">★</label>
+                                        <input name="estrellas" id="radio_habitaciones4" type="radio" value="2">
+                                        <label for="radio_habitaciones4">★</label>
+                                        <input name="estrellas" id="radio_habitaciones5" type="radio" value="1">
+                                        <label for="radio_habitaciones5">★</label>
+                                    </p>
+                                </form>
+                                <form>
+                                    <p>Limpieza</p>
+                                    <p class="limpieza" id="calificacion_limpieza">
+                                        <input name="estrellas" id="radio_limpieza1" type="radio" value="5">
+                                        <label for="radio_limpieza1">★</label>
+                                        <input name="estrellas" id="radio_limpieza2" type="radio" value="4">
+                                        <label for="radio_limpieza2">★</label>
+                                        <input name="estrellas" id="radio_limpieza3" type="radio" value="3">
+                                        <label for="radio_limpieza3">★</label>
+                                        <input name="estrellas" id="radio_limpieza4" type="radio" value="2">
+                                        <label for="radio_limpieza4">★</label>
+                                        <input name="estrellas" id="radio_limpieza5" type="radio" value="1">
+                                        <label for="radio_limpieza5">★</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="evaluar ">
+                      <a id="boton_evaluar" type="button" class="texto_evaluar color_boton_evaluar ">Evaluar hotel</a>
+                    </div>
+                  </div>
+                </div>
+                
+    </section>
+    
+    <footer>
+        <p>Derechos reservados por Copyright © 2019</p>
+    </footer>
+
+
+   
+    
+    <script src="js/inicio sesión/controlador_permisos.js"></script>
+    <script src="js/inicio sesión/controlador_cerrar_sesion.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+        
+    <script src="js/hoteles/servicio_hoteles.js"></script>
+    <script src="js/hoteles/card_hotel.js"></script>
+    <script src="js/hoteles/promedio_calificaciones.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+html{
+  background-image: url('https://www.riu.com/es/binaris/Slide_Riu_guanacaste-min_tcm49-179855.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.titulo{
+  font-size: 42px;
+  font-weight: 700;   
+  margin: 20px 500px 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255,0.7);
+  padding: 30px 20px;
+}
+
+#descripcion div{
+  padding: 10px 20px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 90px;
+  margin-bottom: 5px;
+}
+
+#descripcion input{
+  height: 20px;
+}
+
+#descripcion select {
+  height: 24px;
+}
+
+.filtroHotel {
+  width: 150px;
+}
+label{
+  font-size: 16px;     
+  display: inline-block;
+  width: 100px;
+  font-weight: 600;
+  margin-left: 20px;
+  color: #000;
+  
+}
+
+
+
+.ranking label {
+  width: 380px;
+  margin-left: 250px;
+  
+}
+
+#seleccionRanking{
+  width: 218px;
+  height: 20px;;
+  margin-left: 10px;
+  
+  
+}
+
+
+.tb_hoteles{
+  background: #fff;
+ margin: 20px 200px 80px;
+  width:1000px;
+  min-height: 60px;
+  max-height: 200px;
+}
+
+.tb_hoteles tr td{
+  border: 1px solid black;
+}
+
+.tb_hoteles thead{
+  background: #f39c12;
+  color: #fff;
+}
+
+.tb_hoteles tbody {
+  overflow-y: scroll;
+  min-height: 50px;
+  max-height: 300px;
+}
+
+.tb_hoteles th, .tb_hoteles td{
+  vertical-align: middle;
+  text-align: center;
+  padding: 12px 0;
+  width: 220px;
+  min-height: 20px;
+  max-height: 20px;
+  
+}
+
+.tb_hoteles tbody tr:hover{
+  background-color: rgba(255, 159, 67,0.5);
+  
+}
+
+
+
+.mapa {
+  margin: 70px 330px 0;
+  height: 489px;
+  width: 700px;
+  box-shadow: unset 0 0 5px 5px;
+}
+
+.cerrar_mapa {
+  font-size: 30px;
+  color: #fff;
+  top: 0;
+  float: right;
+  text-align: right;
+  
+}
+
+
+.equis_cerrar {
+  background-color: #f39c12;
+  padding: 10px 20px;
+}
+
+.equis_cerrar:hover {
+  cursor: pointer;
+}
+
+.titulo{
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  
+}
+
+.titulo div h1 {
+  background-color: rgba(255, 255, 255, 0.432);
+  padding: 20px 30px;
+  margin: 10px 200px;
+}
+
+
+.estrellas_sin_calificar {
+  display: inline-block;
+  font-size: 30px;
+  position: relative;
+  margin-top: 10px;
+  font-family: FontAwesome;
+}
+ 
+.estrellas_sin_calificar::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+ 
+.estrellas_calificadas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+ 
+.estrellas_calificadas::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+  position: relative;
+  
+}
+
+.boton_hacer_calificacion {
+  margin-top: 10px;
+  box-shadow: rgba(255, 255, 255, 0.432);
+  border:none;
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.boton_hacer_calificacion:hover{
+  text-decoration-line: underline;
+  color: red;
+}

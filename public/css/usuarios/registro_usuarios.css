@@ -1,0 +1,104 @@
+.imagen_fondo{
+    background: url('http://s1.1zoom.me/big0/807/357828-admin.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.col_izq .label{
+    margin-left: 30px;
+    width:200px;
+    display: inline-block;
+}
+
+.form {
+    margin: 50px 170px;
+    background-color: rgba(255, 255, 255, 0.829);
+    padding: 50px 40px 80px;
+}
+
+.form h1 {
+    font-size: 40px;
+    margin: 0px 0 70px;
+    text-align: center;
+}
+
+.col_izq {
+    float: left;
+    margin-right: 100px;
+}
+
+.col_izq div {
+    margin: 10px 0 55px;
+}
+
+.col_izq p {
+    display: block;
+    margin-top: 4px;
+    margin-left: 240px;
+    font-size: 12px;
+}
+
+.col_der .label{
+    width: 200px;
+    display: inline-block;
+}
+
+.col_der p {
+    display: block;
+    margin-top: 4px;
+    margin-left: 200px;
+    font-size: 12px;
+    width: 170px;
+    line-height: 16px;
+}
+
+
+#foto {
+    margin-top: 5px;
+    width: 140px;
+    height: 150px;
+}
+
+.col_der{
+    float: left;
+    margin-left: 0px;
+}
+
+.col_der div {
+    margin-bottom: 30px;
+}
+
+#boton_foto {
+    background-color: #f1c40f;
+    color: #000;
+    padding: 5px 0 ;
+    border-radius: 5px;
+    margin-top: 0px;
+    width: 141px;
+
+}
+
+.form input {
+    width: 170px;
+    height: 20px;
+}
+
+#botonCrearCuenta{
+    background-color:#f1c40f;
+    color: #000;
+    padding: 14px 0 14px;
+    width: 120px;
+    margin-top: 70px;
+    position: relative;
+    border-radius: 5px;
+}
+#botonCrearCuenta:hover, #boton_foto:hover{
+    background:#faae35;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+
+

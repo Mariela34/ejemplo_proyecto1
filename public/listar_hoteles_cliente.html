@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+    <title>Hoteles | Hoteles Costa Rica</title>
+    <meta charset="utf/8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="css/general.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hoteles/listar_hoteles_clientes.css">
+</head>
+
+<body class= "fondo_inicio_sesion">
+  
+    <header class="header_sesion_iniciada">
+        <h1>Hoteles Costa Rica</h1>
+        <nav>
+            <a href="listar_usuarios.html" id="nav_usuarios">Usuarios</a>
+            <a href="" id="nav_hoteles">Hoteles</a>
+            <a href="" id="btnCerrarSesion">Cerrar sesión</a>
+        </nav>
+        
+    </header>
+
+    <section id="descripcion">
+        <h1 class="titulo">Hoteles</h1>
+
+    
+        <div>
+            <label for="textFiltroHotelCliente" class="filtroHotel">Filtrar por nombre</label>
+            <input type="text" id="textFiltroHotelCliente">
+            
+        </div>
+        <div>
+            <div>
+                <label for="">Provincia</label>
+                <select name="" id="seleccionProvincia">
+                    <option value="--Seleccione una provincia--">--Seleccione una provincia--</option>
+                </select>
+                <label for="">Cantón</label>
+                <select name="" id="seleccionCanton">
+                    <option value="--Seleccione un cantón--">--Seleccione un cantón--</option>
+                </select>
+                <label for="">Distrito</label>
+                <select name="" id="seleccionDistrito" >
+                    <option value="--Seleccione un distrito--">--Seleccione un distrito--</option>
+                </select>
+            </div>
+        </div>
+       
+        <div>
+            <div class="ranking">
+                <label for="">Puede filtrar los hoteles dependiendo de su ranking</label>                   
+                    <select name="" id="seleccionRanking">
+                    <option value="--Seleccione un tipo de ranking--">--Seleccione un tipo de ranking--</option>
+                    <option value="Mayor a menor">Mayor a menor</option>
+                    <option value="Menor a mayor">Menor a mayor</option>
+                </select>
+                
+            </div>
+        </div>  
+
+    </section>
+    <section>
+      <table class="tb_hoteles" id="tb_hoteles">
+        <thead>
+          <tr>
+            <th>Nombre de hotel</th>
+            <th>Ubicación</th>
+            <th>Provincia</th>
+            <th>Cantón</th>
+            <th>Distrito</th>
+            <th>Dirección</th>
+            <th>Ranking general</th>
+          </tr>
+        </thead>
+        <tbody id="tb_hoteles_tbody">
+            
+        </tbody>
+      </table>
+                
+    </section>
+    
+    <footer>
+        <p>Derechos reservados por Copyright © 2019</p>
+    </footer>
+    <script src="js/inicio sesión/controlador_permisos.js"></script>
+    <script src="js/inicio sesión/controlador_cerrar_sesion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/hoteles/servicio_hoteles.js"></script>
+    <script src="js/hoteles/controlador_lugares.js"></script>
+    <script src="js/hoteles/controlador_lista_hoteles_clientes.js"></script>
+    
+
+    
+
+</body>
+
+
+</html>
+

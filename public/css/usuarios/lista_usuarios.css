@@ -1,0 +1,83 @@
+html{
+    background-image: url('https://s-ec.bstatic.com/images/hotel/max1024x768/152/152835103.jpg');
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+.tituloCliente{
+    font-size: 32px;
+    font-weight: 700;   
+    margin: 50px 500px;
+    text-align: center;
+    background-color: rgba(255, 255, 255,0.7);
+    padding: 30px 20px;
+}
+
+#descripcion div{
+    background-color: rgba(255, 255, 255,0.7);
+    padding: 10px 20px;
+    margin-left: 80px;
+    margin-right: 970px;
+    margin-bottom: 60px;
+}
+
+.filtroCliente{
+    font-size: 18px; 
+    display: inline-block;
+    width: 70px;
+    
+}
+
+#textFiltroSucur{
+    width: 170px;
+    height: 20px;;
+    
+}
+
+
+.tb_clientes{
+    
+    background: #fff;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+
+.tb_clientes thead{
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.tb_clientes tr td{
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.tb_clientes thead{
+    background: rgba(255, 123, 0, 0.8);
+    color: #fff;
+}
+
+
+
+
+.tb_clientes th, .tb_clientes td{
+    vertical-align: middle;
+    text-align: center;
+    padding: 12px 0;
+    width: 180px;
+}
+
+.tb_clientes tbody tr:hover{
+    background-color: rgba(247, 147, 34, 0.8);
+}
+
+.tb_clientes img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.sexo {
+    max-width: 120px;
+}

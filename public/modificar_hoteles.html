@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+    <title>Modificar hoteles | Hoteles Costa Rica</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hoteles/modificar_hoteles.css">
+</head>
+
+<body>
+    <header class="header_sesion_iniciada">
+        <h1>Hoteles Costa Rica</h1>
+        <nav>
+            <a href="listar_usuarios.html" id="nav_usuarios">Usuarios</a>
+            <a href="" id="nav_hoteles">Hoteles</a>
+            <a href="" id="btnCerrarSesion">Cerrar sesión</a>
+        </nav>
+        
+    </header>
+    <section id="reg_sucursal">
+        <h2>Modificar hotel</h2>
+        
+      
+        <div>
+        <form class="form_modificar_hotel ">
+           
+            <div>
+                <label for="modificarNombreHotel">Nombre de hotel</label>
+                <input type="text" id="modificarNombreHotel" placeholder="Nombre del hotel">
+            </div>
+            <div class="contenedor_mapa">
+                    <h4>Ubicacion</h4>
+
+                <div >
+                    <section id="map">
+    
+                    </section>
+                </div>
+                <h4>Mueva el marcador para modificar la ubicación</h4>
+                <div>
+                    <input type="hidden" id="posicionX_mod"  / disabled>
+                    <input type="hidden" id="posicionY_mod" / disabled>
+                </div>
+            </div>
+            <div>
+                <label for="">Provincia</label>
+                <select name="" id="seleccionProvincia">
+
+                </select>
+                <label for="">Cantón</label>
+                <select name="" id="seleccionCanton">
+
+                </select>
+                <label for="">Distrito</label>
+                <select name="" id="seleccionDistrito" >
+
+                </select>
+            </div>
+            <div>
+                <label class="modificarDireccion" for="modificarDireccion">Dirección exacta</label>
+                <textarea id="modificarDireccion" max="70"  cols="22" rows="6" placeholder="Dirección exacta del hotel"></textarea>
+
+            </div>
+           
+        </form> 
+        <button type="button" id="btn_Actualizar">Actualizar hotel</button>
+    </section>
+   
+    <footer>
+        <p>Derechos reservados por Copyright © 2019</p>
+    </footer>
+    <script src="js/inicio sesión/controlador_permisos.js"></script>
+    <script src="js/inicio sesión/controlador_cerrar_sesion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/hoteles/servicio_hoteles.js"></script>
+    <script src="js/hoteles/controlador_lugares.js"></script>
+
+    <script src="js/hoteles/modificar_hoteles.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDvafQYC3-Vkqc0y8zyOyesUA8Zy0aZ_A&callback=initMap"
+     type="text/javascript"></script>
+
+ 
+</body>
+</html>

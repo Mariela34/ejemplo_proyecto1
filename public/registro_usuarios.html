@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Registro cuenta</title>
+    <meta charset="utf/8">
+    <meta description="Aplicación para Hoteles Costa Rica">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="css/usuarios/registro_usuarios.css">
+</head>
+<body class="imagen_fondo">
+    <header class="header_principal">
+        <h1>Hoteles Costa Rica</h1>
+        <nav>
+                <a href="inicio_sesion.html">Iniciar Sesión</a>
+                <a href="registro_usuarios.html">Registrarse</a>
+            </nav>
+    </header>
+
+    <section>
+        <form class="form"> 
+            <h1>Crear cuenta</h1>
+            <div>
+                <div class="col_izq">
+                    <div>
+                        <label for="textCedula" class ="label">Cédula:</label>
+                        <input type="text" id="textCedula" placeholder="Número de cédula" class="cajita" />
+                    </div>
+                    <div>
+                        <label for="textNombreCompleto"class ="label" >Nombre completo:</label>
+                        <input type="text" id="textNombreCompleto" placeholder="Nombre completo" class="cajita"/>
+                    </div>
+                    <div>
+                        <label for="textFechaNacimiento" class ="label">Fecha de Nacimiento:</label>
+                        <input type="date" id="textFechaNacimiento" placeholder="Fecha de Nacimiento"class="cajita"/>
+                    </div>
+                    <div>   
+                        <label for="textEdad" class ="label">Edad:</label> 
+                        <input type="number" id="textEdad" class="cajita" min="18" max="110" disabled>
+                        <p>Debe ser mayor a 18 años</p>
+                    </div>
+                    <div>
+                        <label for="textCorreo"class ="label">Correo electrónico:</label>
+                        <input type="email" id="textCorreo" placeholder="Correo electrónico" class="cajita"/>
+                    </div>
+                        
+                </div>  
+                <div class="col_der">  
+                    <div class="espacio_foto" >
+                        Foto <span>(Opcional)</span>
+                        <figure id="subir_imagen">
+                            <img src="imgs/img_avatar.png" alt="Subir foto" id="foto" />
+                        </figure>
+                        
+                        <button type="button" id="boton_foto" >Subir Foto</button>
+                    </div>
+                    
+                    <div>    
+                            <label for="textContrasenna" class ="label">Contraseña:</label>
+                            <input type="password" id="textContrasenna" placeholder="Contraseña" class="cajita" minlength="8"/>
+                            <p>La contraseña debe contener al menos un número y una letra. Debe de tener como mínimo 8 caracateres. </p>
+                        </div> 
+                        <div>
+                            <label for="textConfirmacion"class ="label">Confirmar Contraseña:</label>
+                            <input type="password" id="textConfirmacion" placeholder="Confirmar contraseña" class="cajita"/>
+                        </div>   
+                        
+                        
+                    </div>
+                    
+                </div>  
+                                   
+            </div>
+            <div>
+                <button type="button" id="botonCrearCuenta">Crear cuenta</button>
+            </div>  
+        </form>
+    </section>
+    <footer>
+        <p>Derechos reservados por Copyright © 2019</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/usuarios/servicio_usuarios.js"></script>
+    <script src="js/usuarios/controlador_registro_usuarios.js"></script>
+
+    <script src='https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js' type='text/javascript'></script>
+    <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script src="js/usuarios/servicio_imagen.js"></script>
+</body>
+
+</html>

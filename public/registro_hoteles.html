@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+    <title>Registro hoteles | Hoteles Costa Rica</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hoteles/registro_hoteles.css">
+</head>
+
+<body>
+        <header class="header_sesion_iniciada">
+            <h1>Hoteles Costa Rica</h1>
+            <nav>
+                <a href="listar_usuarios.html" id="nav_usuarios">Usuarios</a>
+                <a href="" id="nav_hoteles">Hoteles</a>
+                <a href="" id="btnCerrarSesion">Cerrar sesión</a>
+            </nav>
+            
+        </header>
+    <section id="reg_hotel">
+        <h2>Registro de hotel</h2>
+        
+      
+        <div>
+        <form class="form_hotel ">
+           
+            <div class="nombreHotel"> 
+                <label for="textNombreHotel">Nombre de hotel</label>
+                <input type="text" id="textNombreHotel" placeholder="Nombre del hotel">
+            </div>
+            <div class="contenedor_mapa">
+                    <h4>Ubicación</h4>
+                    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+
+                <div >
+                    <section id="map">
+    
+                    </section>
+                </div>
+                <h4>Mueva el marcador para ingresar la ubicación</h4>
+
+                <div>
+                    <input type="hidden" id="posicionX" / disabled>
+                    <input type="hidden" id="posicionY" / disabled>
+                </div>
+            </div>
+            <div>
+                <label for="">Provincia</label>
+                <select name="" id="seleccionProvincia">
+                    <option value="Seleccione una provincia">--Seleccione una provincia--</option>
+                </select>
+                <label for="">Cantón</label>
+                <select name="" id="seleccionCanton">
+                    <option value="Seleccione un cantón">--Seleccione un cantón--</option>
+                </select>
+                <label for="">Distrito</label>
+                <select name="" id="seleccionDistrito" >
+                    <option value="Seleccione un distrito">--Seleccione un distrito--</option>
+                </select>
+            </div>
+            <div>
+                <label class="textDir" for="textDireccion">Dirección exacta</label>
+                <textarea id="textDireccion" max="70"  cols="22" rows="6" placeholder="Dirección exacta del hotel"></textarea>
+            </div>
+           
+        </form> 
+        <button type="button" id="btn_Registrar">Registrar hotel</button>
+    </section>
+    <footer>
+        <p>Derechos reservados por Copyright © 2019</p>
+    </footer>
+
+
+    
+    <script src="js/inicio sesión/controlador_permisos.js"></script>
+    <script src="js/inicio sesión/controlador_cerrar_sesion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/hoteles/map.js"></script>
+    <script src="js/hoteles/servicio_hoteles.js"></script>
+    <script src="js/usuarios/servicio_usuarios.js"></script>
+    <script src="js/hoteles/controlador_lugares.js"></script>
+    <script src="js/hoteles/controlador_registro_hoteles.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDvafQYC3-Vkqc0y8zyOyesUA8Zy0aZ_A&callback=initMap"
+     type="text/javascript"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,48 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;   
+}
+
+header{
+    background-color: #f39c12;
+    height: 60px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    padding: 15px 0px 0 40px ;
+}
+
+header nav{
+    font-family: 'Lobster', cursive;
+    top: 10px;
+    float: right;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 40px 40px 10px;
+    
+}
+
+header nav a:hover {
+    color: rgba(0, 0, 0, 0.493);
+}
+
+.errorInput {
+    border: 1px solid red;
+}
+
+footer {
+    background-color: #ffa617;
+    height: 35px;
+    bottom: 0px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 34px;
+}

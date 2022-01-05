@@ -1,0 +1,303 @@
+html {
+    background-image: url('http://www.cunadelangel.com/wp-content/uploads/2015/11/h3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .contenedor_hotel {
+    margin: 70px auto 0;
+    width: 700px;
+    margin-top: 50px;
+    margin-bottom: 112px;
+
+  }
+  
+ 
+
+label{ 
+    color:grey;
+    font-size: 20px;
+
+}
+
+input[type = "radio"]{
+     display:none;
+}
+
+.comida, .calidad_servicio, .infraestructura, .habitaciones, .limpieza{
+    direction: rtl;/* right to left */
+    unicode-bidi: bidi-override;/* bidi de bidireccional */
+}
+
+
+
+
+.comida > label:hover, .calidad_servicio > label:hover, .infraestructura > label:hover, .habitaciones > label:hover, .limpieza > label:hover {
+    color:orange;
+}
+
+.comida > label:hover ~ label, .calidad_servicio > label:hover ~ label, .infraestructura > label:hover ~ label, .habitaciones > label:hover ~ label, .limpieza > label:hover ~ label{
+    color:orange;
+}
+
+.comida >  input[type = "radio"]:checked ~ label, .calidad_servicio >  input[type = "radio"]:checked ~ label, .infraestructura >  input[type = "radio"]:checked ~ label, .habitaciones >  input[type = "radio"]:checked ~ label, .limpieza >  input[type = "radio"]:checked ~ label{
+    color:orange;
+}
+
+.direccion_hotel {
+    margin-left: 20px;
+    width: 200px;
+}
+
+form {
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.titulo_calificar {
+    margin-top: 120px;
+}
+
+.tabla{
+    display: inline;
+}
+.lado_derecho > p {
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+
+
+  .btnVolver {
+      margin: 40px 60px 40px 90px;
+      float: right;
+      padding: 10px;
+      color: #000;
+    background-color: #f8ce0b;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btnVolver:hover{
+    background-color: #ffdf4f;
+  }
+  
+  .card_hotel {
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+    height: 330px;
+    transition: all 300ms ease-out;
+    width: 100%;
+  }
+  
+  .card_hotel:hover {
+    box-shadow: 0 5px 14px rgba(0, 0, 0, .2);
+  }
+  
+  .contenido {
+    background: none;
+    float: left;
+    height: 100%;
+    width: 35%;
+    position: relative;
+  }
+  
+  
+  
+  .nombre_hotel{
+    padding: 25px 25px 50px ;
+    font-size: 18px;
+  }
+  
+  .evaluaciones {
+    margin-top: 25px;
+  }
+  
+  
+  .evaluaciones > div {
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+  
+  }
+  
+  .evaluaciones > span {
+    display: inline-block;
+  }
+  
+  .evaluaciones span{
+    margin-right: 10px;
+    text-align: center;
+  
+  }
+  
+  .lado_izquierdo {
+    background-position: center center;
+    background-size: cover;
+    background-color: #888;
+    height: 100%;
+  }
+  
+  .lado_izquierdo:after {
+    content: " ";
+    display: block;
+    background-color: #888;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 300ms ease-out;
+    z-index: 10;
+  }
+  
+  .ubicacion {
+    bottom: 20px;
+    left: 70px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 20;
+  }
+  
+  .ubicacion li{
+    display: inline-block;
+    height: 30px;
+    margin-right: 6px;
+    opacity: 0;
+    width: 30px;
+  }
+  
+  .lado_izquierdo:hover .ubicacion {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  
+  
+  .lado_derecho {
+    background-color: #fff;
+    float: left;
+    height: 100%;
+    padding: 12px 15px;
+    position: relative;
+    width: 65%;
+  }
+  
+  .campo_ubicacion {
+    display: block;
+  }
+  
+  .titulo_evaluaciones {
+    display: block;
+    margin-top: 30px;
+  }
+  
+  .evaluar {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    opacity: 1;
+    padding: 0 15px;
+    transition: all 300ms ease-out;
+    width: 100%;
+  }
+  
+  .lado_izquierdo:hover .evaluar {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  
+  .texto_evaluar {
+    display: inline-block;
+  }
+  
+  .titulo_evaluaciones {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .evaluar {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 300ms ease-out;
+  }
+  
+  .lado_derecho:hover .evaluar {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .color_boton_evaluar {
+    color: rgb(252, 0, 0);
+    text-decoration: none;
+    float: right;
+    cursor: pointer;
+  }
+  
+  .color_boton_evaluar:hover {
+    color: rgba(255, 43, 43, 0.788);
+  }
+  
+  
+  .tabla {
+      margin-left: 20px;
+  }
+  
+  table {
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 20px;
+  }
+  
+    
+  table th, 
+  table td {
+    padding: 20px 20px;
+  }
+    
+  
+  
+  .estrellas_sin_calificar {
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    margin-top: 10px;
+    font-family: FontAwesome;
+  }
+   
+  .estrellas_sin_calificar::before {
+    content: "\f006 \f006 \f006 \f006 \f006";
+  }
+   
+  .estrellas_calificadas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+  
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+  }
+   
+  .estrellas_calificadas::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color: #f8ce0b;
+    position: relative;
+    
+  }
